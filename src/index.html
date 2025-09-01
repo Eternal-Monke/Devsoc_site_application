@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body class="whole">
+    <div class="cursor-outline"></div>
+    <div class="top-bar">
+        <div class="bar-text">
+            <a data-target="about">About me</a>
+        </div>
+        <div class="bar-text">
+            <a data-target="projects">My projects</a>
+        </div>
+        <div class="bar-text">
+            <a data-target="contact">Contact</a>
+        </div>
+        <div class="bar-text">
+            <a data-target="background">Change background</a>
+        </div>
+    </div>
+    <br>
+    <!-- <div class="cloud">
+        <svg id="cloud-left" width="120" height="30" fill="none">
+            <path d="M5 27 a5 3 0 0 1 25 -12 a12 9 0 0 1 30 0 a12 9 0 0 1 30 0 a5 3 0 0 1 25 12 z" stroke="#333333" fill="ffffff"/>>
+        </svg>
+        <svg id="cloud-center" width="120" height="30" fill="none">
+            <path d="M5 27 a5 3 0 0 1 25 -12 a12 9 0 0 1 30 0 a12 9 0 0 1 30 0 a5 3 0 0 1 25 12 z" stroke="#333333" fill="ffffff"/>>
+        </svg>
+        <svg id="cloud-right" width="120" height="30" fill="none">
+            <path d="M5 27 a5 3 0 0 1 25 -12 a12 9 0 0 1 30 0 a12 9 0 0 1 30 0 a5 3 0 0 1 25 12 z" stroke="#333333" fill="ffffff"/>>
+        </svg>
+    </div> -->
+    <br><br><br>
+    <p class="title" id="content-title">About</p>
+    <div class="main-content">
+        <div class="main-body" id="content-area">
+            <p class="me-description">Hi, my name is Ali and I am a second year software engineering student at UNSW. I enjoy learning new technologies and creating cool programs and scripts.</p>
+        </div>
+        <model-viewer
+            src="model/luffys_straw_hat/scene.gltf"
+            alt="luffy Straw Hat 3D Model"
+            camera-controls
+            auto-rotate
+            shadow-intensity="1"
+            class="luffys-hat"
+            title="My dream is to be king of the pirates">
+        </model-viewer>
+    </div>
+</body>
+</html>

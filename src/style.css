@@ -1,0 +1,163 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.whole {
+    background-image: url('images/girl_with_car.png');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-position 0.5s ease;
+}
+
+.cursor-outline {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(110, 86, 207, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: all 0.01s ease-out;
+    opacity: 1;
+    z-index: 9999;
+}
+
+.top-bar {
+    display: flex;
+    font-weight: bold;
+    border: 2px solid rgba(0, 0, 0, 0.074);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    z-index: 1000;
+    padding: 20px;
+}
+
+.bar-text {
+    transform: 0.5 ease;
+    cursor: pointer;
+    margin: auto;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bar-text:hover {
+    transform: scale(1.2);
+}
+
+.title {
+    margin: 0 auto;
+    border: 2px solid black;
+    text-align: center;
+    width: 15%;
+    background-color: rgb(215, 216, 250);
+    border-radius: 20px;
+    padding: 10px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.luffys-hat {
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+model-viewer::part(default-progress-bar) {
+  display: none;
+}
+
+.main-body {
+    border: 2px solid black;
+    text-align: center;
+    width: 25%;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120%;
+}
+
+.main-body.projects-change-width {
+    width: 80%;
+}
+
+.all-projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.project-image {
+    background-color: antiquewhite;
+    border-radius: 20px;
+    justify-content: space-between;
+    flex: 1 1 200px;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    padding: 15px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+.project-image img{
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    height: auto;
+    color: #333;
+    font-family: Arial, sans-serif;
+    display: block;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.cloud {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cloud#cloud-left {
+    margin-left: 0 auto;
+}
+
+.cloud#cloud-center {
+    margin: 0 auto;
+}
+
+.cloud#cloud-right {
+    margin-right: 0 auto;
+}
